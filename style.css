@@ -1,0 +1,71 @@
+body {
+  font-family: monospace;
+  text-align: center;
+  background-color: #1e1e2e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#clock {
+  margin-top: 20px;
+  font-size: 8vw; /* responsive font */
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 45%;
+}
+
+#display {
+  font-size: 12vw; /* responsive font */
+  font-weight: bold;
+  background: #333;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin: 20px;
+  width: 60%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (min-width: 480px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+button {
+  font-size: 1.1em;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a4a5e;
+  color: white;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+/* Hover effect */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Active effect (when button is clicked) */
+button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
